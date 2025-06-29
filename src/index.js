@@ -25,7 +25,11 @@ app.use(express.urlencoded({ extended: true, limit: "20mb" }));
 
 app.use(
   cors({
-    origin: ["http://localhost:5173","http://localhost:5174"], // Allow frontend origin
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://talketive-chat-frontend.vercel.app",
+    ], // Allow local and deployed frontend origins
     credentials: true,
   })
 );
