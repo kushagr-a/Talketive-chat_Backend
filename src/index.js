@@ -28,7 +28,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://talketive-chat-frontend.vercel.app",
+      "https://talketive-chat-frontend-eijy.vercel.app/",
     ], // Allow local and deployed frontend origins
     credentials: true,
   })
